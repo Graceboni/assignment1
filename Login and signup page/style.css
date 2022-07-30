@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ---------------------------------------------Login section------------------------------------------------ */
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-bg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("Images/8.jpg");
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    position: absolute;
+} 
+
+.Login form{
+    margin-top:50px;
+    padding: 40px;
+    background: linear-gradient(rgba(233, 77, 103,0.7),rgba(0, 0, 0, 0.6));
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.Login form h2{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+
+}
+.Login form .icon{
+    min-width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70;
+
+}
+
+.Login form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.Login form .inputBox input,
+.Login form .inputBox textarea
+{
+    width: 100%;
+    padding: 5 10px ;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(19, 18, 18);
+    outline: none;
+    resize: none;
+}
+.Login form .inputBox span{
+    position: absolute;
+    left: 5;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:rgb(19, 18, 18);
+}
+.Login form .inputBox input:focus~span,
+.Login form .inputBox input:valid~span
+{ 
+    color:#fff;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.Login form input[type="submit"]
+{
+    width:250px;
+    background:rgb(233, 77, 103);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+.Login form input[type="submit"]:hover{
+    background-color: rgb(182, 37, 61);
+}
+.Login form h6{
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+.Login form h6 a{
+    color: rgb(233, 77, 103);
+    text-decoration: none;
+}
+.Login form h5 a{
+    color: white;
+    text-decoration: none;
+}
+.Login form h5{
+    margin-bottom: 10px;
+
+}
+
+/* ----------------------sign up section---------------------------- */
+.img-signup{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("Images/14.jpg");
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    position: absolute;
+}
+
+
+
+ .contact-form {
+    margin-top:50px;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    width: 25%;
+    z-index: 1;
+}
+ .contact-form h2{
+    font-size: 30px;
+    color:rgb(233, 77, 103);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.contact-form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 1px;
+}
+.contact-form .inputBox input,
+.contact-form .inputBox textarea
+{
+    width: 100%;
+    padding: 5 10px ;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(233, 77, 103);
+    outline: none;
+    resize: none;
+}
+.contact-form .inputBox span{
+    position: absolute;
+    left: 5;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:rgb(233, 77, 103);
+}
+.contact-form .inputBox input:focus~span,
+.contact-form .inputBox input:valid~span
+{ 
+    color:#fff;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+/* .m-b-15{
+    margin-bottom: 15px;
+} */
+.contact-form input[type="submit"]
+{
+    width:100%;
+    background: rgb(233, 77, 103);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding:5px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.contact-form input[type="submit"]:hover{
+    background-color: rgb(182, 37, 61);
+}
+.contact-form h6{
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+.contact-form h6 a{
+    color: rgb(233, 77, 103);
+    text-decoration: none;
+}
+.social-links{
+    text-align: center;
+}
+
+.btn-1{
+    font-size: 1em;
+    font-family: poppins, sans-serif;
+    color: #fff;
+    background: #4267B2;
+    padding: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btn-2{
+    font-size: 1em;
+    font-family: poppins, sans-serif;
+    color: #fff;
+    background: rgb(233, 77, 103);
+    padding: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-1:hover{
+    background:rgb(19, 18, 18);
+    transition: ease-out;
+}
+.btn-2:hover{
+    background: rgb(19, 18, 18);
+    transition: ease-out;
+}
+@media screen and (max-width:700px)
+{
+    .contact-form{
+        width: auto;
+    }
+}
